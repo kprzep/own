@@ -18,14 +18,18 @@ public class UtilsyApp {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-            for (File hiddenFile : FileUtils.showHiddenFilesInDir("c:/")) {
-                System.out.println(hiddenFile);
-            
+
+        for (File hiddenFile : FileUtils.showHiddenFilesInDir("c:/")) {
+            System.out.println(hiddenFile);
+
         }
-            
-            for (File dirFile : FileUtils.showDirectoriesInDirectory("c:/Users")) {
-                System.out.println(dirFile);
+
+        for (File dirFile : FileUtils.showDirectoriesInDirectory("c:/Users")) {
+            System.out.println(dirFile);
         }
+
+        XUtils.readXmlStaxDiag("C:/kp/samochody.xml");
+
     }
-    
+
 }
