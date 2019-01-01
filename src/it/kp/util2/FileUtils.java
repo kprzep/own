@@ -13,10 +13,22 @@ import java.io.File;
  */
 public class FileUtils {
 
+    /**
+     * Metoda zwracajaca pliki ukryte w podanym katalogu
+     *
+     * @param dir
+     * @return
+     */
     public static File[] showHiddenFilesInDir(String dir) {
         return new File(dir).listFiles(File::isHidden);
     }
 
+    /**
+     * Metoda zwracajaca podkatalogi w podanym katalogu
+     *
+     * @param dir
+     * @return
+     */
     public static File[] showDirectoriesInDirectory(String dir) {
         return new File(dir).listFiles(File::isDirectory);
     }
